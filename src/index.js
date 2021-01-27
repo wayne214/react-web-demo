@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {GlobalStyle} from "./styles";
+import {GlobalIconFontStyle} from "./statics/iconfont/iconfont";
 
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyle/>
+    <GlobalIconFontStyle />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
