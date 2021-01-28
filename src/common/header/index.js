@@ -7,6 +7,7 @@ import {Addition, Button, HeaderWrapper,
     SearchInfoSwitch, SearchInfoItem
 } from "./styles";
 import {searchFocus, searchBlur, getSearchTrendingList, mouseEnter, mouseLeave, changePage} from '../../actions/header.action'
+import {Link} from "react-router-dom";
 
 class Header extends Component {
 
@@ -52,7 +53,10 @@ class Header extends Component {
         const {focused} = this.props;
         return (
             <HeaderWrapper>
-                <Logo href={'/'}/>
+                <Link to='/'>
+                    <Logo />
+                </Link>
+
                 <Nav>
                     <NavItem className={'left active'}>首页</NavItem>
                     <NavItem className={'left'}>下载App</NavItem>
