@@ -8,9 +8,9 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/home";
-import Detail from "./pages/detail";
-import Login from "./pages/login";
-import Write from "./pages/write";
+import Detail from "./pages/detail/loadable.js";
+import Login from "./pages/login/loadable.js";
+import Write from "./pages/write/loadable.js";
 
 
 import store from "./store";
