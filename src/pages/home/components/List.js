@@ -11,7 +11,8 @@ class List extends Component{
                 {
                     articleList.map(item=>{
                         return(
-                            <Link to='/detail'>
+                            // 路由传参
+                            <Link to='/detail/100'>
                                 <ListItem>
                                     <img
                                         alt={''}

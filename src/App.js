@@ -38,7 +38,8 @@ function App() {
                         <Route path="/" exact>
                             <Home />
                         </Route>
-                        <Route path="/detail" exact>
+                        {/*路由传参*/}
+                        <Route path="/detail/:id" exact>
                             <Detail />
                         </Route>
                     </Switch>

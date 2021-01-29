@@ -1,7 +1,17 @@
 import React, {Component} from 'react';
+import {connect} from "react-redux";
 import {DetailContent, DetailWrapper, Header} from "./styles";
+import {withRouter} from 'react-router';
 
 class Detail extends Component{
+
+    componentDidMount() {
+        // 获取路由传递过来的参数
+        const params = this.props.match.params;
+        console.log('123', params)
+
+    }
+
     render() {
         return(
             <DetailWrapper>
@@ -17,4 +27,4 @@ class Detail extends Component{
     }
 }
 
-export default Detail;
+export default connect()(withRouter(Detail));
