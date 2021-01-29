@@ -9,6 +9,8 @@ import {
 
 import Home from "./pages/home";
 import Detail from "./pages/detail";
+import Login from "./pages/login";
+import Write from "./pages/write";
 
 
 import store from "./store";
@@ -41,6 +43,14 @@ function App() {
                         {/*路由传参*/}
                         <Route path="/detail/:id" exact>
                             <Detail />
+                        </Route>
+
+                        <Route path="/login" exact>
+                            <Login />
+                        </Route>
+
+                        <Route path="/write" exact>
+                            <Write />
                         </Route>
                     </Switch>
                 </div>

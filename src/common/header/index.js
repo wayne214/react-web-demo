@@ -8,6 +8,7 @@ import {Addition, Button, HeaderWrapper,
 } from "./styles";
 import {searchFocus, searchBlur, getSearchTrendingList, mouseEnter, mouseLeave, changePage} from '../../actions/header.action'
 import {Link} from "react-router-dom";
+import {logout} from '../../actions/login.action';
 
 class Header extends Component {
 
@@ -50,7 +51,7 @@ class Header extends Component {
 
 
     render() {
-        const {focused} = this.props;
+        const {focused, isLogin} = this.props;
         return (
             <HeaderWrapper>
                 <Link to='/'>
@@ -60,7 +61,13 @@ class Header extends Component {
                 <Nav>
                     <NavItem className={'left active'}>首页</NavItem>
                     <NavItem className={'left'}>下载App</NavItem>
-                    <NavItem className={'right'}>登录</NavItem>
+                    {
+                        isLogin ?
+                            <NavItem onClick={this.props._logout} className={'right'}>退出</NavItem> :
+                            <Link to='/login'>
+                                <NavItem className={'right'}>登录</NavItem>
+                            </Link>
+                    }
                     <NavItem className={'right'}>
                         <span className="iconfont">&#xe636;</span>
                     </NavItem>
@@ -81,10 +88,12 @@ class Header extends Component {
                     </SearchWrapper>
                 </Nav>
                 <Addition>
-                    <Button className={'writing'}>
-                        <span className="iconfont">&#xe611;</span>
-                        写文章
-                    </Button>
+                    <Link to='/write'>
+                        <Button className={'writing'}>
+                            <span className="iconfont">&#xe611;</span>
+                            写文章
+                        </Button>
+                    </Link>
                     <Button className={'reg'}>注册</Button>
                 </Addition>
             </HeaderWrapper>
@@ -92,13 +101,14 @@ class Header extends Component {
     }
 }
 
-const mapStateToProps = ({header}) => {
+const mapStateToProps = ({header, login}) => {
     return {
         focused: header.get('focused'),
         trendingList: header.get('trendingList'),
         mouseIn: header.get('mouseIn'),
         page: header.get('page'),
-        totalPage: header.get('totalPage')
+        totalPage: header.get('totalPage'),
+        isLogin: login.get('isLogin')
     }
 }
 
@@ -134,6 +144,9 @@ const mapDispatchToProps = (dispatch) => {
             }else {
                 dispatch(changePage(1))
             }
+        },
+        _logout() {
+            dispatch(logout())
         }
     }
 }

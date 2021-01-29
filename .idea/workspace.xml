@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56248fbd-e0c1-418f-b6d3-60c68a1af648" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/api/login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/action_types/login.type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/login.action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/write/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/login.reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/detail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/detail/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/components/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/header/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/header/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/reducers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/write" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -41,10 +49,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/write" />
       <recent name="$PROJECT_DIR$/src/reducers" />
-      <recent name="$PROJECT_DIR$/src/pages/detail" />
-      <recent name="$PROJECT_DIR$/src/statics/iconfont" />
-      <recent name="$PROJECT_DIR$/src/statics" />
+      <recent name="$PROJECT_DIR$/src/action_types" />
+      <recent name="$PROJECT_DIR$/src/actions" />
+      <recent name="$PROJECT_DIR$/src/pages/login" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -57,7 +66,7 @@
       <updated>1611389567550</updated>
       <workItem from="1611389571240" duration="80000" />
       <workItem from="1611474607971" duration="8895000" />
-      <workItem from="1611649105993" duration="25547000" />
+      <workItem from="1611649105993" duration="28213000" />
     </task>
     <servers />
   </component>
